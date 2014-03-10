@@ -20,5 +20,4 @@ ADD flaskapp.wsgi /var/www/flaskapp/flaskapp.wsgi
 ADD flaskapp.cfg /etc/apache2/sites-available/flaskapp
 RUN a2ensite flaskapp
 
-EXPOSE 80
 EXPOSE 5000
