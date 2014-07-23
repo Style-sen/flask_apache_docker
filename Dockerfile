@@ -1,4 +1,4 @@
-FROM ubuntu:quantal
+FROM ubuntu:latest
 
 MAINTAINER mrmrcoleman/pythonjs
 
@@ -17,7 +17,7 @@ RUN pip install -r /tmp/requirements.txt
 
 RUN mkdir /var/www/public_html
 ADD flaskapp.wsgi /var/www/flaskapp/flaskapp.wsgi
-ADD flaskapp.cfg /etc/apache2/sites-available/flaskapp
-RUN a2ensite flaskapp
+ADD flaskapp.cfg /etc/apache2/sites-available/flaskapp.conf
+RUN a2ensite flaskapp.conf
 
 EXPOSE 5000
