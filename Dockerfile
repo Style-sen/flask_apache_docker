@@ -18,6 +18,6 @@ RUN pip install -r /tmp/requirements.txt
 RUN mkdir /var/www/public_html
 ADD flaskapp.wsgi /var/www/flaskapp/flaskapp.wsgi
 ADD flaskapp.cfg /etc/apache2/sites-available/flaskapp.conf
-RUN a2ensite flaskapp
+RUN a2ensite flaskapp.conf
 
 EXPOSE 5000
