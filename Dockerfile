@@ -19,6 +19,8 @@ RUN apt-get install -y python3-jinja2
 
 RUN pip3 install flask-mysql
 RUN pip3 install flask-json
+RUN pip3 install peewee
+RUN pip3 install PyMySQL
 
 RUN mkdir /var/www/public_web
 ADD flaskapp.wsgi /var/www/flaskapp/flaskapp.wsgi
