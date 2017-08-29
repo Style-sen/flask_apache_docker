@@ -20,6 +20,7 @@ RUN apt-get install -y python3-jinja2
 RUN pip3 install flask-mysql
 RUN pip3 install flask-json
 RUN pip3 install flask-login
+RUN pip3 install flask-bcrypt
 RUN pip3 install peewee
 RUN pip3 install PyMySQL
 
