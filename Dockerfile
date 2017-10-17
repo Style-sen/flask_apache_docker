@@ -22,6 +22,7 @@ RUN pip3 install flask-json
 RUN pip3 install flask-login
 RUN pip3 install flask-bcrypt
 RUN pip3 install flask-excel
+RUN pip3 install flask-bootstrap
 RUN pip3 install pyexcel-xls
 RUN pip3 install peewee
 RUN pip3 install PyMySQL
