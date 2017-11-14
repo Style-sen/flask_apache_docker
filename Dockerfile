@@ -24,7 +24,7 @@ RUN pip3 install flask-bcrypt
 RUN pip3 install flask-excel
 RUN pip3 install flask-bootstrap
 RUN pip3 install pyexcel-xls
-RUN pip3 install peewee
+RUN pip3 install SQLAlchemy
 RUN pip3 install PyMySQL
 
 RUN mkdir /var/www/public_web
