@@ -26,6 +26,7 @@ RUN pip3 install flask-bootstrap
 RUN pip3 install flask-moment
 RUN pip3 install flask-script
 RUN pip3 install flask-sqlalchemy
+RUN pip3 install flask-migrate
 RUN pip3 install pyexcel-xls
 RUN pip3 install SQLAlchemy
 RUN pip3 install PyMySQL
